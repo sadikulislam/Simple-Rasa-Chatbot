@@ -1,0 +1,340 @@
+version: "3.1"
+
+nlu:
+- intent: greeting
+  examples: |
+    - Hola
+    - Buen día
+    - Buenos días
+    - Buenas tardes
+    - Buenas noches
+    - Hola de nuevo
+    - Buenas tardes de nuevo
+    - Cómo estás?
+    - Cómo te encuentras?
+    - Cómo estás hoy?
+    - Qué tal?
+    - Qué tal estás?
+    - Qué hay de nuevo?
+    - Cómo te ha ido?
+    - Cómo te ha ido hoy?
+    - Qué has estado haciendo?
+    - Qué planes tienes hoy?
+    - Cómo te sientes hoy?
+    - Cómo te sientes?
+    - Estás bien?
+    - Estás teniendo un buen día?
+    - Estás teniendo un buen día hoy?
+    - Estás teniendo un buen día hasta ahora?
+    - Qué tal ha sido tu día?
+    - Cómo ha sido tu día hasta ahora?
+    - Estás teniendo un buen día?
+    - Cómo está tu familia?
+    - Cómo está tu esposo/esposa?
+    - Cómo están tus hijos?
+    - Cómo está tu perro/gato?
+    - Cómo te sientes hoy en día?
+    - Estás disfrutando tu día?
+    - Estás disfrutando tu día hasta ahora?
+    - Cómo te sientes hoy por la mañana?
+    - Cómo te sientes hoy por la tarde?
+    - Cómo te sientes hoy por la noche?
+    - Estás listo/a para comenzar?
+
+
+- intent: order_something
+  examples: |
+    - como hago mi pedido?
+    - Quiero hacer un pedido.
+    - Necesito realizar una compra.
+    - Me gustaría ordenar algo.
+    - Estoy interesado en comprar.
+    - Voy a realizar un pedido.
+    - Quiero comprar algo.
+    - Necesito hacer una orden.
+    - Me gustaría hacer una compra.
+    - Estoy buscando hacer un pedido.
+    - Quiero hacer una orden ahora.
+    - Me gustaría realizar una orden.
+    - Necesito ordenar algo.
+    - Quiero hacer una compra rápida.
+    - Me gustaría ordenar un producto.
+    - Necesito hacer un pedido de inmediato.
+    - Estoy buscando hacer una compra.
+    - Quiero hacer una orden para hoy.
+    - Me gustaría realizar un pedido en línea.
+    - Necesito ordenar algo para entrega.
+    - Quiero hacer una compra en línea.
+    - Me gustaría ordenar algo a domicilio.
+    - Necesito hacer un pedido para entrega en mi casa.
+    - Necesito hacer una orden para recoger en tienda hoy.
+    - Quiero hacer un pedido para entrega en mi oficina.
+    - Me gustaría realizar una compra para entrega en mi trabajo.
+    - Necesito ordenar algo para entrega en mi lugar de trabajo.
+    - Quiero hacer una orden para regalo.
+    - Me gustaría realizar una compra como regalo.
+    - Necesito ordenar algo como regalo.
+    - Quiero hacer un pedido para un amigo.
+    - Me gustaría hacer una compra para un familiar.
+    - Necesito ordenar algo para un ser querido.
+    - Quiero hacer una orden para mi pareja.
+    - Me gustaría realizar una compra para mi esposo/esposa.
+    - Necesito ordenar algo para mi cónyuge.
+    - Quiero hacer un pedido para mi hijo/hija.
+    - Me gustaría hacer una compra para mi hijo/hija.
+    - Necesito ordenar algo para mi hijo/hija.
+
+- intent: shipping_time
+  examples: |
+    - cuanto tarda el envio?
+    - Cuánto tardará mi paquete en llegar?
+    - Podrías decirme cuánto tarda el envío?
+    - Hay algún seguimiento disponible para mi envío?
+    - Puedo esperar recibir mi paquete pronto?
+    - Cuándo estará disponible mi paquete para su entrega?
+    - Cuánto tiempo tarda en enviarse mi paquete?
+    - Hay alguna estimación de tiempo de envío disponible?
+    - Podrías decirme cuánto tiempo tardará mi paquete en llegar?
+    - Hay algún retraso en mi envío?
+    - Podrías proporcionarme una estimación de tiempo de envío?
+    - Podría proporcionarme una fecha de entrega aproximada?
+    - Está mi paquete en camino?
+    - Cuánto tiempo tardará en llegar mi envío?
+    - Podrías proporcionarme una actualización sobre mi envío?
+    - Cuándo recibiré mi paquete?
+    - Podrías decirme si mi envío está en camino?
+    - Está mi paquete en ruta?
+    - Podrías proporcionarme un seguimiento de mi envío?
+    - Hay algún problema con mi envío?
+    - Está mi paquete retrasado?
+    - Podrías decirme si mi paquete ha sido enviado?
+    - Podrías proporcionarme una estimación de la fecha de entrega?
+    - Podrías proporcionarme una actualización sobre el estado de mi envío?
+    - Hay alguna manera de acelerar mi envío?
+
+- intent: shipping_cost
+  examples: |
+    - cuanto cuesta el envio?
+    - ¿Cuánto cuesta el envío?
+    - ¿Podrías proporcionarme un costo estimado de envío?
+    - ¿Hay cargos adicionales por envío?
+    - ¿Podrías decirme cuánto cuesta enviar mi paquete?
+    - ¿Hay descuentos disponibles para el envío?
+    - ¿Hay tarifas de envío para diferentes destinos?
+    - ¿Cuánto cuesta enviar a mi país?
+    - ¿Podrías proporcionarme una lista de tarifas de envío?
+    - ¿Hay tarifas de envío gratuitas disponibles?
+    - ¿Podrías decirme cuánto cuesta el envío internacional?
+    - ¿Cuánto cuesta enviar a mi ciudad?
+    - ¿Podrías proporcionarme un costo aproximado de envío?
+    - ¿Hay tarifas de envío para diferentes tamaños de paquetes?
+    - ¿Podrías decirme cuánto cuesta el envío exprés?
+    - ¿Hay alguna manera de reducir el costo de envío?
+
+- intent: payment_methods
+  examples: |
+    - metodos de pago?
+    - aceptan pagos en oxxo?
+    - ¿Qué métodos de pago aceptan?
+    - ¿Puedo pagar con tarjeta de crédito?
+    - ¿Hay opciones de pago en efectivo?
+    - ¿Podrías proporcionar una lista de métodos de pago disponibles?
+    - ¿Aceptan pagos por transferencia bancaria?
+    - ¿Hay alguna opción de pago en línea disponible?
+    - ¿Puedo pagar con PayPal?
+    - ¿Hay alguna forma de hacer un pago sin tarjeta de crédito?
+    - ¿Puedo pagar con un cheque?
+    - ¿Aceptan pagos con tarjeta de débito?
+    - ¿Hay algún límite en el monto de pago?
+    - ¿Hay alguna comisión por los métodos de pago?
+    - ¿Puedo hacer un pago más tarde?
+    - ¿Hay alguna opción de pago en persona disponible?
+    - ¿Hay alguna manera de hacer un pago sin salir de casa?
+
+- intent: where_to_send_payment_receipt
+  examples: |
+    - Donde envio el comprobante de pago?
+    - ¿Dónde debo enviar el comprobante de pago?
+    - ¿Podrías proporcionarme una dirección para enviar el comprobante de pago?
+    - ¿Hay un correo electrónico específico para enviar el comprobante de pago?
+    - ¿Podrías indicarme cómo enviar el comprobante de pago?
+    - ¿Hay alguna forma de enviar el comprobante de pago en línea?
+    - ¿Podrías proporcionarme un número de fax para enviar el comprobante de pago?
+    - ¿Hay una dirección postal para enviar el comprobante de pago?
+    - ¿Podrías proporcionar una dirección física para enviar el comprobante de pago?
+    - ¿Hay un requisito específico para el formato del comprobante de pago?
+    - ¿Podrías decirme si es necesario incluir algún número de referencia en el comprobante de pago?
+
+- intent: track_order
+  examples: |
+    - como rastreo mi peddido?
+    - ¿Cómo puedo rastrear mi pedido?
+    - ¿Podrías proporcionarme un enlace para rastrear mi paquete?
+    - ¿Hay un número de seguimiento disponible para mi pedido?
+    - ¿Podrías indicarme cómo ver el estado de mi pedido?
+    - ¿Hay una aplicación móvil para rastrear mi paquete?
+    - ¿Podrías decirme si mi paquete ha sido enviado?
+    - ¿Hay una página web para rastrear mi pedido?
+    - ¿Podrías proporcionarme una fecha estimada de entrega para mi paquete?
+    - ¿Hay una opción para recibir actualizaciones sobre el seguimiento de mi pedido?
+    - ¿Podrías verificar el estado actual de mi pedido para mí?
+
+- intent: physical_store_availability
+  examples: |
+    - tienen tienda fisica ?
+    - ¿Tienen una tienda física?
+    - ¿Podrías proporcionarme la dirección de su tienda física?
+    - ¿Hay una sucursal cercana a mi ubicación?
+    - ¿Podrías indicarme si tienen una tienda en mi ciudad?
+    - ¿Hay una tienda física en el centro de la ciudad?
+    - ¿Podrías decirme si tienen una tienda física en el extranjero?
+    - ¿Hay una tienda física para visitar y ver los productos en persona?
+    - ¿Podrías proporcionarme horarios de atención para su tienda física?
+    - ¿Hay una opción para recoger en tienda en lugar de hacer envío a mi dirección?
+    - ¿Podrías proporcionarme un mapa para llegar a su tienda física?
+
+- intent: product_warranty
+  examples: |
+    - Sus productos tienen garantias?
+    - ¿Tienen garantía sus productos?
+    - ¿Podrías proporcionarme información sobre la garantía de sus productos?
+    - ¿Cuánto tiempo dura la garantía de sus productos?
+    - ¿Hay una garantía para productos defectuosos?
+    - ¿Cómo hago un reclamo por garantía?
+    - ¿Podrías decirme si la garantía incluye reparación o reemplazo?
+    - ¿Hay garantía para productos dañados durante el envío?
+    - ¿Podrías proporcionarme detalles sobre la política de garantía?
+    - ¿La garantía es válida en todo el mundo?
+    - ¿Hay un proceso para extender la garantía de los productos?
+
+- intent: product_list
+  examples: |
+    - Que productos venden?
+    - ¿Qué tipo de productos venden?
+    - ¿Podrías proporcionarme una lista de productos disponibles?
+    - ¿Hay un catálogo en línea de sus productos?
+    - ¿Podrías decirme si tienen productos electrónicos?
+    - ¿Venden productos para el hogar?
+    - ¿Podrías proporcionarme información sobre sus productos de moda?
+    - ¿Hay productos para niños disponibles?
+    - ¿Venden productos deportivos?
+    - ¿Podrías decirme si tienen productos de belleza y cuidado personal?
+    - ¿Hay una sección de productos para el jardín?
+
+- intent: minicup_hits
+  examples: |
+    - ¿Cuántos hits tiene el mini cup?
+    - ¿Podrías proporcionarme información sobre los hits del mini cup?
+    - ¿Hay algún registro de los hits del mini cup?
+    - ¿Cuánto tiempo se ha mantenido el mini cup en los hits?
+    - ¿Podrías decirme si el mini cup sigue siendo popular?
+    - ¿Hay algún ranking de los hits del mini cup?
+    - ¿Podrías proporcionarme estadísticas sobre los hits del mini cup?
+    - ¿Qué tan alto está el mini cup en la lista de hits actualmente?
+    - ¿Cuántos hits ha tenido el mini cup en total?
+    - ¿Podrías decirme si el mini cup ha estado en los hits durante mucho tiempo?
+
+- intent: extended_delivery_zone
+  examples: |
+    - como se si mi codigo postal es zona extendida?
+    - ¿Cómo sé si mi código postal es una zona extendida?
+    - ¿Hay una manera de verificar si mi ubicación es una zona extendida?
+    - ¿Podrías proporcionarme una lista de códigos postales que se consideran zonas extendidas?
+    - ¿Qué significa ser una zona extendida para el envío?
+    - ¿Hay un mapa que muestre las zonas extendidas para el envío?
+    - ¿Podrías decirme si mi dirección está en una zona extendida?
+    - ¿Hay un cargos adicionales para envíos a zonas extendidas?
+    - ¿Hay restricciones en el envío a zonas extendidas?
+    - ¿Podrías proporcionarme más información sobre envíos a zonas extendidas?
+    - ¿Hay una forma de cambiar mi dirección a una zona no extendida?
+
+- intent: product_recommendation
+  examples: |
+    - ¿Podrías recomendarme un producto para vender?
+    - ¿Qué productos son populares en el mercado actual?
+    - ¿Hay algún producto con una alta demanda que recomiendes?
+    - ¿Podrías proporcionarme una lista de productos recomendados para vender?
+    - ¿Hay algún producto que sea fácil de vender?
+    - ¿Podrías darme algunos consejos sobre qué productos son rentables?
+    - ¿Hay algún producto en particular que esté en aumento en términos de demanda?
+    - ¿Hay algún producto que tenga una alta tasa de conversión?
+    - ¿Podrías recomendarme algún producto con una buena relación calidad-precio?
+    - ¿Hay algún producto que tenga una buena relación entre el precio y la demanda?
+
+- intent: payment_location
+  examples: |
+    - donde se paga?
+    - ¿Dónde debo hacer el pago?
+    - ¿Hay una tienda física para hacer el pago?
+    - ¿Podrías proporcionarme una dirección para hacer el pago?
+    - ¿Es posible hacer el pago en línea?
+    - ¿Hay algún lugar específico para hacer el pago?
+    - ¿Podrías proporcionarme más información sobre los métodos de pago?
+    - ¿Hay una oficina cercana para hacer el pago?
+    - ¿Hay un servicio de pago en mi área?
+    - ¿Podrías proporcionarme una lista de lugares donde puedo hacer el pago?
+    - ¿Hay una opción para hacer el pago a través de un banco?
+
+- intent: necessary_video_delivery
+  examples: |
+    - Hola me llegó el paquete y grabé el video pero todo llegó bien, ¿es necesario mandar el video?
+    - ¿Es obligatorio enviar el video de la entrega?
+    - ¿Realmente necesitan ver el video de la entrega?
+    - ¿Hay alguna razón por la que deba enviar el video de la entrega?
+    - ¿El video de la entrega es requerido en todos los casos?
+    - ¿Podría simplemente confirmar que todo está bien sin enviar el video?
+    - ¿Es necesario enviar el video aunque todo llegó bien?
+    - ¿Hay alguna penalización si no envío el video de la entrega?
+    - ¿Qué pasa si no envío el video de la entrega?
+    - ¿Hay algún incentivo para enviar el video de la entrega?
+    - ¿Podría hacer una excepción y no enviar el video de la entrega?
+
+- intent: best_selling_flavors
+  examples: |
+    - ¿Cuáles son los sabores más populares?
+    - ¿Podrías proporcionarme una lista de los sabores más vendidos?
+    - ¿Cuáles son los sabores más demandados?
+    - ¿Hay algún sabor en particular que sea muy popular?
+    - ¿Podrías decirme cuáles son los sabores más vendidos actualmente?
+    - ¿Hay algún sabor que sea especialmente popular?
+    - ¿Podrías proporcionarme información sobre los sabores más vendidos?
+    - ¿Cuáles son los sabores más populares en tu experiencia?
+    - ¿Podrías sugerirme algún sabor que sea muy popular?
+    - ¿Hay algún sabor que sea un favorito entre tus clientes?
+
+- intent: in_store_pickup
+  examples: |
+    - puedo recoger en tienda fisica?
+    - ¿Es posible recoger en tienda física?
+    - ¿Ofrecen recogida en tienda?
+    - ¿Puedo pasar a recoger mi pedido en una tienda?
+    - ¿Hay opción de recogida en una tienda cercana?
+    - ¿Ofrecen la opción de recoger el pedido en una tienda física?
+    - ¿Puedo recoger mi compra en una tienda cercana?
+    - ¿Hay alguna tienda donde pueda recoger mi pedido?
+    - ¿Quiero recoger mi pedido en una tienda, es posible?
+    - ¿Ofrecen la opción de recoger el pedido en una tienda?
+    - ¿Hay tiendas donde pueda recoger mi compra?
+
+- intent: pre-order_for_in-store_purchase
+  examples: |
+    - Para comprar en tienda tengo que hacer el pedido un día antes no?
+    - ¿Tengo que hacer un pedido previo para comprar en tienda?
+    - ¿Es necesario hacer una reserva para comprar en tienda?
+    - ¿Debo hacer un pedido antes para recoger en tienda?
+    - ¿Hay que hacer una precompra para ir a la tienda?
+    - ¿Puedo comprar directamente en la tienda o tengo que hacer un pedido previo?
+    - ¿Es necesario hacer una reserva antes de ir a la tienda?
+    - ¿Tengo que hacer un pedido previo para poder comprar en la tienda física?
+    - ¿Hay que hacer una pre-compra para recoger en tienda física?
+    - ¿Puedo ir a la tienda a comprar sin hacer un pedido previo?
+    - ¿Es necesario hacer una pre-compra antes de ir a la tienda física?
+
+- intent: bot_challenge
+  examples: |
+    - ¿Eres un bot?
+    - ¿Eres un humano?
+    - ¿Estoy hablando con un bot?
+    - ¿Estoy hablando con un humano?
+    - ¿bot?
+    - ¿humano?

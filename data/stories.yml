@@ -1,0 +1,95 @@
+version: "3.1"
+
+stories:
+
+- story: Welcome path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+
+
+- story: Order Something
+  steps:
+  - intent: order_something
+  - action: utter_order_something
+
+- story: Shipping cost path
+  steps:
+  - intent: shipping_cost
+  - action: utter_shipping_cost
+
+- story: Shipping time path
+  steps:
+  - intent: shipping_time
+  - action: utter_shipping_time
+
+- story: Payment method
+  steps:
+  - intent: payment_methods
+  - action: utter_payment_methods
+
+- story: Payment recipent sending
+  steps:
+  - intent: where_to_send_payment_receipt
+  - action: utter_where_to_send_payment_receipt
+
+- story: Track order
+  steps:
+  - intent: track_order
+  - action: utter_track_order
+
+- story: Physical activity store
+  steps:
+  - intent: physical_store_availability
+  - action: utter_physical_store_availability
+
+- story: Product Warrenty
+  steps:
+  - intent: product_warranty
+  - action: utter_product_warranty
+
+- story: Product list
+  steps:
+  - intent: product_list
+  - action: utter_product_list
+
+- story: Minicup hits
+  steps:
+  - intent: minicup_hits
+  - action: utter_minicup_hits
+
+- story: Extended delivery zone
+  steps:
+  - intent: extended_delivery_zone
+  - action: utter_extended_delivery_zone
+
+- story: product recommendation
+  steps:
+  - intent: product_recommendation
+  - action: utter_product_recommendation
+
+- story: payment location
+  steps:
+  - intent: payment_location
+  - action: utter_payment_location
+
+- story: necessary video delivery
+  steps:
+  - intent: necessary_video_delivery
+  - action: utter_necessary_video_delivery
+
+- story: best selling flavors
+  steps:
+  - intent: best_selling_flavors
+  - action: utter_best_selling_flavors
+
+- story: in store pickup
+  steps:
+  - intent: in_store_pickup
+  - action: utter_in_store_pickup
+
+- story: pre-order for in-store purchase
+  steps:
+  - intent: pre-order_for_in_store_purchase
+  - action: utter_pre-order_for_in_store_purchase
+

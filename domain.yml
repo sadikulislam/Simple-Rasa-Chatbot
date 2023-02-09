@@ -1,0 +1,114 @@
+version: "3.1"
+
+intents:
+  - greeting
+  - bot_challenge
+  - order_something
+  - shipping_cost
+  - shipping_time
+  - payment_methods
+  - where_to_send_payment_receipt
+  - track_order
+  - physical_store_availability
+  - product_warranty
+  - product_list
+  - minicup_hits
+  - extended_delivery_zone
+  - product_recommendation
+  - payment_location
+  - necessary_video_delivery
+  - best_selling_flavors
+  - in_store_pickup
+  - pre-order_for_in_store_purchase
+
+
+responses: 
+  utter_greeting:
+  - text: ¡Hola! ¿En qué puedo ayudarte hoy?
+  
+  utter_order_something:
+  - text: Hola el proceso de compra es muy fàcil, la pagina es muy facil e intuitiva, ingresa a www.maximomayoreo.com y elige los modelos y sabores de tu gusto , al finalizar el sistema te creara una oferta especifica por el numero de piezas que elegiste y te hara un descuento
+
+  utter_shipping_cost:
+  - text: Hola el envio a cualquier estado de la rapublica es de $210 mxn , excepto zonas extendidas que es un costo adicional de $160 mxn
+
+  utter_shipping_time:
+  - text: Hola normalmente cuando verificamos tu pago, comienza el area de armado a crear tu paquete, despues de eso lo entregamos a paqueteria y ellos se encargan de entregar tu pedido en 3 a 5 dias hàbiles
+  
+  utter_payment_methods:
+  - text: Por el momento solo aceptamos transferencias bancarias , no aceptamos deposito en oxxo ni tarjetas de crèdito o debito
+  
+  utter_where_to_send_payment_receipt:
+  - text: Por aqui puedes enviarme el comprobante de pago legible, de preferencia con un screenshot por favor y asi verificaremos tu comprobante
+
+  utter_track_order:
+  - text: Paqueteria -Fedex
+      La actualización de rastreo puede variar de 12 a 48 horas ya que manejamos recolección programada.
+      Te recuerdo que es muy importante grabar video cuando recibas tu paquete antes de abrir ya que será tu garantía si algo llegara a pasar en el producto
+
+  utter_physical_store_availability:
+  - text: Nos enontramos en CDMX zona centro
+      Izazaga 89 5to piso Local i-585
+      De lunes a sábado 10:00 am a 06:00 pm
+      Domingo de 11:00 am a 05:00 pm
+  
+  utter_product_warranty:
+  - text: te comento los Productos CON garantia son
+      Mini cup
+      Mars Gate
+      Lio Boom
+      Bang XXL
+      Elf Bar
+      Energy 5,000
+      Energy 8,000
+      Glub Bar
+      Pro Max original
+      aplican restricciones
+
+  utter_product_list:
+  - text: Tenemos una larga gama de productos , entre los mas vendidos son Mini Cup, Iplay y Vape Gun , si gustas saber mas de nuestros productos te dejo el link www.maximomayoreo.com
+
+  utter_minicup_hits:
+  - text: El grandioso Mini cup cuenta con 6,000 hits y cuenta con sabores deliciosos como lo es Sandia, Menta , Coco Latte ò Te Helado entre otros
+
+  utter_extended_delivery_zone:
+  - text: Te dejo un link donde puedes averiguar si tu codigo postal es o no es zona extendida http://zonasextendidas.com/
+
+  utter_product_recommendation:
+  - text: te recomendamos comenzar por los productos mas economicos para ir elevando el ticket promedio de compra
+
+  utter_payment_location:
+  - text: Te comparto los datos para transferencia interbancaria
+      Banco Sistema de transferencias Personales (STP)
+      Clabe
+      646180146010983494
+      Beneficiario Omar Pina
+  
+  utter_necessary_video_delivery:
+  - text: no es necesario enviarlo en este momento, agradecemos tu confianza
+
+  utter_best_selling_flavors:
+  - text: dependiendo de la marca pero en general son
+      Menta
+      sandia
+      fresa / lychee
+      moras
+      uva
+      platano
+      manzana
+      mango
+      kiwi
+
+  utter_in_store_pickup:
+  - text: Claro, cuando finalizas tu pedido, hay una pestaña donde dice recoger en tienda y estaria listo tu pedido 2 dias despues
+
+  utter_pre-order_for_in_store_purchase:
+  - text: No es necesario, puede comprar directo sobre el inventario disponible
+
+  utter_bot_challenge:
+  - text: I am a eAssistant, eCommerce's official chatbot! I was developed by Sonic Automation
+      and powered by Rasa.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
